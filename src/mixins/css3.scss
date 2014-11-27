@@ -1,0 +1,65 @@
+@mixin backface-visibility($visibility){
+  -webkit-backface-visibility: $visibility;
+          backface-visibility: $visibility;
+}
+
+@mixin animation($animation) {
+  -webkit-animation: $animation;
+          animation: $animation;
+}
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+          box-shadow: $shadow;
+}
+
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+
+@mixin scale($ratio...) {
+  -webkit-transform: scale($ratio);
+          transform: scale($ratio);
+}
+
+@mixin skew($x, $y) {
+  -webkit-transform: skewX($x) skewY($y);
+          transform: skewX($x) skewY($y);
+}
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+          transform: translate($x, $y);
+}
+@mixin translate3d($x, $y, $z) {
+  -webkit-transform: translate3d($x, $y, $z);
+          transform: translate3d($x, $y, $z);
+}
+@mixin rotateZ($degrees) {
+  -webkit-transform: rotateZ($degrees);
+          transform: rotateZ($degrees);
+}
+
+@mixin transform-origin($origin...) {
+  -webkit-transform-origin: $origin;
+          transform-origin: $origin;
+}
+
+@mixin perspective($perspective) {
+  -webkit-perspective: $perspective;
+          perspective: $perspective;
+}
+
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+          transition: $transition;
+}
+
+@mixin user-select($select) {
+  -webkit-user-select: $select;
+          user-select: $select;
+}
+
+@mixin placeholder($color) {
+  &::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
+}

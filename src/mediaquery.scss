@@ -1,0 +1,38 @@
+@mixin respond($breakpoint) {
+
+	$value: map-get($breakpoints, $breakpoint);
+
+	@if $value != null {
+		@media (min-width: $value) {
+			@content;
+		}
+	}
+
+	@else {
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "  
+        		+ "Please make sure it is defined in `$breakpoints` map.";  
+	}
+
+}
+
+
+@mixin dpi($dpi) {
+
+	$value: map-get($dpis, $dpi);
+
+	@if $value != null {
+		@media (-webkit-min-device-pixel-ratio: $value), (min-device-pixel-ratio: $value) { 
+			@content;
+		}
+	}
+
+	@else {
+		@warn "Unfortunately, no value could be retrieved from `#{$dpis}`. "  
+        		+ "Please make sure it is defined in `$breakpoints` map.";  
+	}
+
+}
+
+
+
+

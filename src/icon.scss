@@ -1,0 +1,60 @@
+// arrow
+[class^="icon-arr"] {
+	display: inline-block;
+	vertical-align: middle;
+	width: 10px;
+	height: 10px;
+	border-style: solid;
+	border-width: 1px 1px 0 0;
+	border-color: #939393;
+	@include transform-origin(75%, 25%);
+}
+
+.icon-arr-right {
+	@include rotateZ(45deg);
+}
+
+.icon-arr-down {
+	@include rotateZ(135deg);
+}
+
+.icon-arr-left {
+	@include rotateZ(-135deg);
+}
+
+.icon-arr-up {
+	@include rotateZ(-45deg);
+}
+
+.icon-arr-d {
+	border-width: 2px 2px 0 0;
+}
+
+// list
+.icon-list {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 14px;
+	height: 14px;
+	border-style: solid;
+	border-width: 2px 0 2px 0;
+	border-color: #939393;
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		margin-top: -1px;
+		width: 100%;
+		height: 2px;
+		background-color: #939393;
+	}
+}
+
+
+// icon size
+.icon-lg {
+	width: 20px;
+	height: 20px;
+}

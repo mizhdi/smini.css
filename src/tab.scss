@@ -1,0 +1,20 @@
+@for $index from 2 through $tab-column {
+	.tab-#{$index} {
+		width: 100%;
+		@include flexbox;
+		> li {
+			width: percentage((1 / $index));
+		}
+	}
+}
+
+
+.tab-bordered {
+	> li:first {
+		@include border-left-radius(5px);
+	}
+
+	> li:last {
+		@include border-right-radius(5px);
+	}
+}

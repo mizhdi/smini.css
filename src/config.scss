@@ -1,0 +1,30 @@
+$base-font: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif !default;
+$main-color: #4089e8 !default;
+
+// layout 
+$header-height: 40px !default;
+$footer-height: 45px !default;
+$columns : 12 !default;
+
+// button
+$btn-default-color: #4089e8 !default;
+
+// tab 
+$tab-column: 5 !default;
+
+// breakpoints
+$breakpoints: (
+	'small'    : 320px,
+	'medium'   : 480px,
+	'large'    : 640px
+) !default;
+
+
+$dpis: (
+	'm': 1,
+	'h': 1.5,
+	'xh': 2
+) !default; 
+
+
+
